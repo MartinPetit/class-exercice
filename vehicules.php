@@ -2,7 +2,7 @@
 
 class vehicules {
 	private $nb_passagers=0;
-	private $nb_km=0;
+	protected $nb_km;
 
 	public function setPassagers($nb_passagers) {
 		$this->nb_passagers = $nb_passagers;
@@ -13,7 +13,6 @@ class vehicules {
 	}
 
 
-
 	public function monter($nb_passagers) {
 		return $this->nb_passagers += $nb_passagers;
 	}
@@ -22,13 +21,12 @@ class vehicules {
 		return $this->nb_passagers -= $nb_passagers;
 	}
 
-	public function setnbKm($nb_km) {
-		$this->nb_km = $nb_km;
-	}
-
 	public function getnbKms() {
 		return $this->nb_km;
 	}
+
+
+
 
 
 

@@ -1,11 +1,13 @@
 <?php
 
 class voitures extends vehicules {
-	$heure;
+	
 
-	public function parcourir($heure) {
-		return $this->($heure*130) = getnbKms();
+	public function parcourir($nb_km) {
+		return $this->nb_km = $nb_km*130;
+	
 	}
+
 
 }
 
